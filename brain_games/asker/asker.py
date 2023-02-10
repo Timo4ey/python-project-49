@@ -3,7 +3,7 @@ import prompt
 
 
 def ask_u_str(question):
-    """Askign a user question and return the unswer"""
+    """Asking a user question and return the answer"""
     print(f'Question: {question}')
     answer = prompt.string('Your answer: ')
     return answer
