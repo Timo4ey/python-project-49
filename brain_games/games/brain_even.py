@@ -14,7 +14,7 @@ def even_game(name: str):
     if response == answer:
         return 'Correct!'
     else:
-        return response, answer
+        return response, answer, __name__
 
 
 def main():
