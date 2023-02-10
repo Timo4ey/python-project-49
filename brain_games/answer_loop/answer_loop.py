@@ -1,6 +1,7 @@
 #!usr/bin/env python3
 from string import digits
 
+
 def answer_loop(fn):
     def wrapper(name=''):
         counter = 0
@@ -19,4 +20,3 @@ def answer_loop(fn):
                       f"\nLet's try again, {name}!")
                 break
     return wrapper
-
