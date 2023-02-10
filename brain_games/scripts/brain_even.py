@@ -1,41 +1,26 @@
 #!/usr/bin/env python3
 
-import prompt
 from random import randint
+from ..greeting import welcome_user
+from ..answer_loop import answer_loop
+from ..ascker import ask_u_str
 
 
-def greeting():
-    """Greeting a user and gets name"""
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}')
-    return name
-
-
+@answer_loop
 def even_game(name):
-    """Asks a user"""
-
-    counter = 0
-    attemps = 3
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
-    while counter < attemps:
-        num = randint(1, 100)
-        istrue = 'yes' if num % 2 == 0 else 'no'
-        print(f'Question: {num}')
-        answer = prompt.string('Your answer: ').lower()
-        if answer == istrue:
-            counter += 1
-            print('Correct!')
-        else:
-            print(f"{answer} is wrong answer ;(. Correct answer was {istrue}.\
-                    \nLet's try again, {name}!")
-            break
-        print(f"Congratulations, {name}")
+    num = randint(1, 100)
+    istrue = 'yes' if num % 2 == 0 else 'no'
+    answer = ask_u_str(num)
+    if answer == istrue:
+        return 'Correct!'
+    else:
+        return answer, istrue
 
 
 def main():
-    name = greeting()
+    name = welcome_user()
     even_game(name)
 
 
