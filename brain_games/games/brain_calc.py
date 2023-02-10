@@ -30,7 +30,7 @@ def brain_calc(name: str) -> str | tuple:
     if response == str(answer):
         return 'Correct!'
     else:
-        return response, answer
+        return response, answer, __name__
 
 
 def main():
