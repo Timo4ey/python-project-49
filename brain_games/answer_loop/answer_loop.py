@@ -18,14 +18,16 @@ def answer_loop(fn):
     def wrapper(name=''):
         counter = 0
         while counter < 3:
-            res = fn(name)
-            if res == 'Correct!':
-                check_value(res)
+            response = fn(name)
+            if response == 'Correct!' and counter <=1:
+                check_value(response)
                 counter += 1
-                if counter == 3:
-                    print(f"Congratulations, {name}")
+            elif response == 'Correct!' and counter == 2:
+                check_value(response)
+                print(f"Congratulations, {name}")
+                counter += 1
             else:
-                check_value(res)
+                check_value(response)
                 print(f"Let's try again, {name}!")
                 break
     return wrapper
