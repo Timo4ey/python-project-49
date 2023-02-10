@@ -2,13 +2,19 @@
 from string import digits
 
 
+def quotes(data):
+    que = "\'" if data[0] in digits or any(map(
+        lambda x: isinstance(x, int), data[0])) == int else "\""
+    return que
+
+
 def check_value(res):
     """This function servers the
     answer_loop. It's react on a response and print an answer"""
     if isinstance(res, str):
         print('Correct!')
     else:
-        que = "\'" if res[0] in digits else "\""
+        que = quotes(res[0])
         user_answer = f"{que}{res[0]}{que} is wrong answer ;(."
         correct_answer = f"Correct answer was {que}{res[1]}{que}."
         print(user_answer, correct_answer)
