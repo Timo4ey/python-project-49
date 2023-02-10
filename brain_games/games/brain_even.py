@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 from random import randint
-from brain_games.greeting.greeting import welcome_user
-from brain_games.answer_loop.answer_loop import answer_loop
-from brain_games.asker.asker import ask_you
+from brain_games.scripts.greeting.greeting import welcome_user
+from brain_games.scripts.answer_loop.answer_loop import answer_loop
+from brain_games.scripts.asker.asker import ask_you
 
 
 @answer_loop
