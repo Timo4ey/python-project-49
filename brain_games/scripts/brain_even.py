@@ -7,9 +7,7 @@ from brain_games.asker.asker import ask_you
 
 
 @answer_loop
-def even_game(name):
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-
+def even_game(name: str):
     num = randint(1, 100)
     answer = 'yes' if num % 2 == 0 else 'no'
     response = ask_you(num)
@@ -20,6 +18,7 @@ def even_game(name):
 
 
 def main():
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     name = welcome_user()
     even_game(name)
 
