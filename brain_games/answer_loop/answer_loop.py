@@ -3,7 +3,8 @@ from string import digits
 
 
 def check_value(res):
-    """This function servers the answer_loop. It's react on a response and print an answer"""
+    """This function servers the
+    answer_loop. It's react on a response and print an answer"""
     if isinstance(res, str):
         print('Correct!')
     else:
@@ -19,7 +20,7 @@ def answer_loop(fn):
         counter = 0
         while counter < 3:
             response = fn(name)
-            if response == 'Correct!' and counter <=1:
+            if response == 'Correct!' and counter <= 1:
                 check_value(response)
                 counter += 1
             elif response == 'Correct!' and counter == 2:
