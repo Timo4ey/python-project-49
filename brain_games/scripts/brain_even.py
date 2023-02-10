@@ -2,8 +2,8 @@
 
 from random import randint
 from ..greeting import welcome_user
-from ..answer_loop import answer_loop
-from ..ascker import ask_u_str
+from brain_games.answer_loop.answer_loop import answer_loop
+from brain_games.asker.asker import ask_u_str
 
 
 @answer_loop
@@ -11,12 +11,12 @@ def even_game(name):
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
     num = randint(1, 100)
-    istrue = 'yes' if num % 2 == 0 else 'no'
+    is_true = 'yes' if num % 2 == 0 else 'no'
     answer = ask_u_str(num)
-    if answer == istrue:
+    if answer == is_true:
         return 'Correct!'
     else:
-        return answer, istrue
+        return answer, is_true
 
 
 def main():
