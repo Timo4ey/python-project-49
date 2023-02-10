@@ -1,6 +1,6 @@
 #!usr/bin/env python3
 
-from random import randint, choice
+from brain_games.scripts.create_example.create_example import create_example
 from brain_games.scripts.greeting.greeting import welcome_user
 from brain_games.scripts.answer_loop.answer_loop import answer_loop
 from brain_games.scripts.asker.asker import ask_you
@@ -11,14 +11,6 @@ def calc(operand_a: int, operand_b: int, operand: str) -> int:
                   "-": operand_a - operand_b,
                   "*": operand_a * operand_b}
     return operations.get(operand)
-
-
-def create_example() -> tuple:
-    operators = ['+', '-', '*']
-    operand_a = randint(1, 100)
-    operand_b = randint(1, 100)
-    symbol = choice(operators)
-    return operand_a, operand_b, symbol
 
 
 @answer_loop
