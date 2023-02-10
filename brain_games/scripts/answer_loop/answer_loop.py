@@ -1,10 +1,8 @@
 #!usr/bin/env python3
-from string import digits
 
 
 def quotes(data):
-    que = "\'" if data[0] in digits or any(map(
-        lambda x: isinstance(x, int), data[0])) == int else "\""
+    que = "\"" if data[2] == 'brain_games.games.brain_even' else "\'"
     return que
 
 
@@ -14,7 +12,7 @@ def check_value(res):
     if isinstance(res, str):
         print('Correct!')
     else:
-        que = quotes(res[0])
+        que = quotes(res)
         user_answer = f"{que}{res[0]}{que} is wrong answer ;(."
         correct_answer = f"Correct answer was {que}{res[1]}{que}."
         print(user_answer, correct_answer)
