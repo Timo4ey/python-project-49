@@ -3,6 +3,7 @@ from string import digits
 
 
 def check_value(res):
+    """This function servers the answer_loop. It's react on a response and print an answer"""
     if isinstance(res, str):
         print('Correct!')
     else:
@@ -13,6 +14,7 @@ def check_value(res):
 
 
 def answer_loop(fn):
+    """This is a decorator that call a function 3 times"""
     def wrapper(name=''):
         counter = 0
         while counter < 3:
