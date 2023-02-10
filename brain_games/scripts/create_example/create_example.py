@@ -9,3 +9,7 @@ def create_example() -> tuple:
     operand_b = randint(1, 100)
     symbol = choice(operators)
     return operand_a, operand_b, symbol
+
+
+if __name__ == '__main__':
+    print(create_example())
