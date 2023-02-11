@@ -14,3 +14,6 @@
 
 ## Brain progression, an example of using:
 [![asciicast](https://asciinema.org/a/5uiACtgamCET81b2UIEIvg98M.svg)](https://asciinema.org/a/5uiACtgamCET81b2UIEIvg98M)
+
+## Brain prime, an example of using:
+[![asciicast](https://asciinema.org/a/TirwomEocN5BlQdvnoCBT29o6.svg)](https://asciinema.org/a/TirwomEocN5BlQdvnoCBT29o6)
