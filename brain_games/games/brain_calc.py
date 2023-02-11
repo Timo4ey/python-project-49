@@ -2,8 +2,8 @@
 
 from brain_games.scripts.create_example.create_example import create_example
 from brain_games.scripts.greeting.greeting import welcome_user
-from brain_games.scripts.answer_loop.answer_loop import answer_loop
-from brain_games.scripts.asker.asker import ask_you
+from brain_games.scripts.loop_of_questions.loop_of_questions import loop_of_questions
+from brain_games.scripts.asker.asking_question import asking_question
 
 
 def calc(operand_a: int, operand_b: int, operand: str) -> int:
@@ -13,12 +13,12 @@ def calc(operand_a: int, operand_b: int, operand: str) -> int:
     return operations.get(operand)
 
 
-@answer_loop
+@loop_of_questions
 def brain_calc(name: str) -> str | tuple:
     operand_a, operand_b, symbol = create_example()
     example = f'{operand_a} {symbol} {operand_b}'
     answer = calc(operand_a, operand_b, symbol)
-    response = ask_you(example)
+    response = asking_question(example)
     if response == str(answer):
         return 'Correct!'
     else:

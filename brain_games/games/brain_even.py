@@ -2,15 +2,15 @@
 
 from random import randint
 from brain_games.scripts.greeting.greeting import welcome_user
-from brain_games.scripts.answer_loop.answer_loop import answer_loop
-from brain_games.scripts.asker.asker import ask_you
+from brain_games.scripts.loop_of_questions.loop_of_questions import loop_of_questions
+from brain_games.scripts.asker.asking_question import asking_question
 
 
-@answer_loop
+@loop_of_questions
 def even_game(name: str):
     num = randint(1, 100)
     answer = 'yes' if num % 2 == 0 else 'no'
-    response = ask_you(num)
+    response = asking_question(num)
     if response == answer:
         return 'Correct!'
     else:

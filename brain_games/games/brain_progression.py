@@ -1,6 +1,6 @@
 from random import randint
-from brain_games.scripts.answer_loop.answer_loop import answer_loop
-from brain_games.scripts.asker.asker import ask_you
+from brain_games.scripts.loop_of_questions.loop_of_questions import loop_of_questions
+from brain_games.scripts.asker.asking_question import asking_question
 from brain_games.scripts.greeting.greeting import welcome_user
 
 
@@ -25,11 +25,11 @@ def riddle_progressive(progressive: list | tuple | set) -> tuple:
     return output, secret_num
 
 
-@answer_loop
+@loop_of_questions
 def brain_progression(name: str):
     progressive = create_progression()
     riddle, answer = riddle_progressive(progressive)
-    response = ask_you(riddle)
+    response = asking_question(riddle)
     if response == str(answer):
         return 'Correct!'
     else:

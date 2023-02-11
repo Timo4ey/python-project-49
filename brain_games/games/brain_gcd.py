@@ -1,6 +1,6 @@
 from brain_games.scripts.create_example.create_example import create_example
-from brain_games.scripts.answer_loop.answer_loop import answer_loop
-from brain_games.scripts.asker.asker import ask_you
+from brain_games.scripts.loop_of_questions.loop_of_questions import loop_of_questions
+from brain_games.scripts.asker.asking_question import asking_question
 from brain_games.scripts.greeting.greeting import welcome_user
 
 
@@ -12,10 +12,10 @@ def nod(operand_a, operand_b):
     return operand_b
 
 
-@answer_loop
+@loop_of_questions
 def brain_gcd(name: str):
     operand_1, operand_2, _ = create_example()
-    response = ask_you(f"{operand_1} {operand_2}")
+    response = asking_question(f"{operand_1} {operand_2}")
     answer = nod(operand_1, operand_2)
     if response == str(answer):
         return 'Correct!'

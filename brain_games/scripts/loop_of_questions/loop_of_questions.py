@@ -1,7 +1,7 @@
 #!usr/bin/env python3
 
 
-def quotes(data):
+def choose_quotes(data):
     que = "\"" if data[2] in ('brain_games.games.brain_even',
                               'brain_games.games.brain_prime') else "\'"
     return que
@@ -9,17 +9,17 @@ def quotes(data):
 
 def check_value(res):
     """This function servers the
-    answer_loop. It's react on a response and print an answer"""
+    loop_of_questions. It's react on a response and print an answer"""
     if isinstance(res, str):
         print('Correct!')
     else:
-        que = quotes(res)
+        que = choose_quotes(res)
         user_answer = f"{que}{res[0]}{que} is wrong answer ;(."
         correct_answer = f"Correct answer was {que}{res[1]}{que}."
         print(user_answer, correct_answer)
 
 
-def answer_loop(fn):
+def loop_of_questions(fn):
     """This is a decorator that call a function 3 times"""
     def wrapper(name=''):
         counter = 0

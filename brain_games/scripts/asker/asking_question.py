@@ -2,7 +2,7 @@
 import prompt
 
 
-def ask_you(question):
+def asking_question(question):
     """Asking a user question and return the answer"""
     print(f'Question: {question}')
     answer = prompt.string('Your answer: ')
