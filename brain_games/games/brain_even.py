@@ -2,7 +2,8 @@
 
 from random import randint
 from brain_games.scripts.greeting.greeting import welcome_user
-from brain_games.scripts.loop_of_questions.loop_of_questions import loop_of_questions
+from brain_games.scripts.loop_of_questions.loop_of_questions \
+    import loop_of_questions
 from brain_games.scripts.asker.asking_question import asking_question
 
 

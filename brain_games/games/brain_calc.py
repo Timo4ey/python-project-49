@@ -1,8 +1,10 @@
 #!usr/bin/env python3
 
-from brain_games.scripts.create_example.create_example import create_example
+from brain_games.scripts.create_example.create_example \
+    import create_example
 from brain_games.scripts.greeting.greeting import welcome_user
-from brain_games.scripts.loop_of_questions.loop_of_questions import loop_of_questions
+from brain_games.scripts.loop_of_questions.loop_of_questions \
+    import loop_of_questions
 from brain_games.scripts.asker.asking_question import asking_question
 
 
