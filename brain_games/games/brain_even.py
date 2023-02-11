@@ -18,8 +18,8 @@ def even_game(name: str):
 
 
 def main():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
     name = welcome_user()
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     even_game(name)
 
 

@@ -37,8 +37,8 @@ def brain_progression(name: str):
 
 
 def main():
-    print("What number is missing in the progression?")
     name = welcome_user()
+    print("What number is missing in the progression?")
     brain_progression(name)
 
 
