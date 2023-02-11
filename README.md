@@ -8,3 +8,6 @@
 
 ## Brain calc, an example of using:
 [![asciicast](https://asciinema.org/a/z28aJxLGfhWvYnFQZQLc1ghkY.svg)](https://asciinema.org/a/z28aJxLGfhWvYnFQZQLc1ghkY)
+
+## Brain gcd, an example of using:
+[![asciicast](https://asciinema.org/a/H5KVVxoD0F1YWjvgbI7F5adco.svg)](https://asciinema.org/a/H5KVVxoD0F1YWjvgbI7F5adco)
