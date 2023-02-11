@@ -1,9 +1,10 @@
 #!usr/bin/env python3
-import prompt
+# import prompt
 
 
 def asking_question(question):
     """Asking a user question and return the answer"""
     print(f'Question: {question}')
-    answer = prompt.string('Your answer: ')
+    # answer = prompt.string('Your answer: ')
+    answer = input('Your answer: ')
     return answer
