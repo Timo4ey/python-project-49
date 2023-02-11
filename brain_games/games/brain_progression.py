@@ -18,7 +18,7 @@ def create_progression() -> list[int, ...]:
 
 
 def riddle_progressive(progressive: list | tuple | set) -> tuple:
-    choose_index = randint(0, len(progressive)-1)
+    choose_index = randint(0, len(progressive) - 1)
     secret_num = progressive[choose_index]
     progressive[choose_index] = '..'
     output = ' '.join([f'{x}' for x in progressive])
