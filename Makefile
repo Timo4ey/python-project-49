@@ -10,6 +10,9 @@ publish:
 package-install: # python3 -m pip install --user dist/*.whl
 	python3 -m pip install dist/*.whl
 
+uninstall-hexlet:
+	pip uninstall hexlet_code -y
+
 lint:
 	poetry run flake8 brain_games
 
