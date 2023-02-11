@@ -30,7 +30,7 @@ def answer_loop(fn):
                 counter += 1
             elif response == 'Correct!' and counter == 2:
                 check_value(response)
-                print(f"Congratulations, {name}")
+                print(f"Congratulations, {name}!")
                 counter += 1
             else:
                 check_value(response)
