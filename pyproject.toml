@@ -2,7 +2,10 @@
 name = "hexlet-code"
 version = "1.5.1"
 description = ""
-authors = ["Timofey"]
+authors = [
+	"Timofey yakovishintimofey@gmail.com",
+]
+repository = "https://github.com/Timo4ey/python-project-49"
 readme = "README.md"
 packages = [{include = "brain_games"}]
 
