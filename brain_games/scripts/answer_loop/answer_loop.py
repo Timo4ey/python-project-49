@@ -2,7 +2,7 @@
 
 
 def quotes(data):
-    que = "\"" if data[2] == 'brain_games.games.brain_even' else "\'"
+    que = "\"" if data[2] in ('brain_games.games.brain_even', 'brain_games.games.brain_prime') else "\'"
     return que
 
 
