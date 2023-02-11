@@ -26,8 +26,8 @@ def brain_calc(name: str) -> str | tuple:
 
 
 def main():
-    name = welcome_user()
     print("What is the result of the expression?")
+    name = welcome_user()
     brain_calc(name)
 
 

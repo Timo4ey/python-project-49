@@ -24,8 +24,8 @@ def brain_gcd(name: str):
 
 
 def main():
-    name = welcome_user()
     print("Find the greatest common divisor of given numbers.")
+    name = welcome_user()
     brain_gcd(name)
 
 
