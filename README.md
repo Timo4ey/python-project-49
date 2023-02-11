@@ -3,6 +3,15 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/06c65a8ab4af5d81aca8/maintainability)](https://codeclimate.com/github/Timo4ey/python-project-49/maintainability)
 
+## How to build and start the program
+1. Make a clone from this repo
+2. Use command `make build`to create download file
+<br> If you don't want to install it into your system than you can activate environment `poetry shell` and 
+install into it
+3. Use command `make publish`
+4. Install the application through `make package-install`
+[![asciicast](https://asciinema.org/a/Qi9aLY9EfbVY4ahkuWJJq5Ndb.svg)](https://asciinema.org/a/Qi9aLY9EfbVY4ahkuWJJq5Ndb)
+
 ## Brain-even, an example of using:
 [![asciicast](https://asciinema.org/a/hURrtchnt8VoZ0Q7pehxBJAsC.svg)](https://asciinema.org/a/hURrtchnt8VoZ0Q7pehxBJAsC)
 
