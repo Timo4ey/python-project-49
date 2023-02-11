@@ -11,3 +11,6 @@
 
 ## Brain gcd, an example of using:
 [![asciicast](https://asciinema.org/a/H5KVVxoD0F1YWjvgbI7F5adco.svg)](https://asciinema.org/a/H5KVVxoD0F1YWjvgbI7F5adco)
+
+## Brain progression, an example of using:
+[![asciicast](https://asciinema.org/a/5uiACtgamCET81b2UIEIvg98M.svg)](https://asciinema.org/a/5uiACtgamCET81b2UIEIvg98M)
